@@ -1,12 +1,11 @@
 import React from "react";
-import { Github, Linkedin, Twitter } from "lucide-react";
+import { Github, Linkedin, X } from "lucide-react";
 
 const Footer: React.FC = () => {
   const socialLinks = [
     { icon: Github, label: "GitHub", href: "https://github.com/Grishj/" },
     { icon: Linkedin, label: "LinkedIn", href: "#" },
-    { icon: Twitter, label: "Twitter", href: "#" },
-    // { icon: Globe, label: 'Google Scholar', href: '#' },
+    { icon: X, label: "X", href: "#" }, // { icon: Globe, label: 'Google Scholar', href: '#' },
     // { icon: BookOpen, label: 'ORCID', href: '#' },
     // { icon: Globe, label: 'Web of Science', href: '#' },
     //{ icon: Users, label: 'Scopus', href: '#' },
