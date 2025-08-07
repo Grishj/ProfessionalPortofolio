@@ -30,10 +30,10 @@ const Resume: React.FC = () => {
                 <p>
                   <strong>Email:</strong>{" "}
                   <a
-                    href="mailto:gtech2884@gmail.com"
+                    href="mailto:joshigrish058@gmail.com"
                     className="text-orange-600 hover:text-orange-700"
                   >
-                    gtech2884@gmail.com
+                    joshigrish058@gmail.com
                   </a>
                 </p>
                 <p>
@@ -42,11 +42,11 @@ const Resume: React.FC = () => {
                 <p>
                   <strong>Portfolio:</strong>{" "}
                   <a
-                    href="https://grishjoshi.netlify.app/"
+                    href="https://grishjoshi.vercel.app/"
                     target="_blank"
                     className="text-orange-600 hover:text-orange-700"
                   >
-                    grishjoshi.netlify.app
+                    grishjoshi
                   </a>
                 </p>
               </div>
