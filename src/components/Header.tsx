@@ -24,7 +24,7 @@ const Header: React.FC = () => {
                 Grish Joshi
               </h1>
               <p className="text-sm text-gray-500 mt-1">Computer Engineer</p>
-              <p className="text-sm text-gray-500">QA Enginnerr</p>
+              <p className="text-sm text-gray-500">Mobile App Developer(React-Native)</p>
             </Link>
           </div>
 

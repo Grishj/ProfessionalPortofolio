@@ -1,34 +1,26 @@
 import React from "react";
+import { Github, ExternalLink } from "lucide-react";
 
 const Projects: React.FC = () => {
   const projects = [
     {
-      name: "Mobile Banking App Clone",
+      name: "Medicine Reminder App",
       description:
-        "A fully functional clone of a mobile banking app, implementing core banking features with React Native and Node.js backend.",
+        "A feature-rich mobile application built with React Native that helps users manage their daily medication schedule with reminders, notifications, dosage tracking, and history logs. Backend powered by Node.js and PostgreSQL.",
       status: "Ongoing",
       category: "Mobile App",
+      githubUrl: "https://github.com/Grishj/MedicineReminderApp", // Replace with actual GitHub URL
+      demoUrl: null, // Add demo URL if available
     },
+
     {
       name: "LicenseMaster",
       description:
         "Computer Engineering License Preparation app, designed to help students prepare for licensing exams with mock tests and resources.",
       status: "Ongoing",
       category: "Education App",
-    },
-    {
-      name: "API Testing",
-      description:
-        "Project focused on API testing automation using Postman and Java test frameworks, improving reliability and test coverage.",
-      status: "Ongoing",
-      category: "Automation",
-    },
-    {
-      name: "Selenium Automation",
-      description:
-        "Automated Selenium WebDriver tests for web applications, increasing test efficiency and reducing manual testing efforts.",
-      status: "Ongoing",
-      category: "Automation",
+      githubUrl: "https://github.com/Grishj/LicenseMaster", // Replace with actual GitHub URL
+      demoUrl: null, // Add demo URL if available
     },
     {
       name: "HomeSolution: On Demand Home Service",
@@ -36,6 +28,8 @@ const Projects: React.FC = () => {
         "Completed on-demand home service app that connects users with local service providers, built with React Native and Node.js backend.",
       status: "Completed",
       category: "Mobile App",
+      githubUrl: "https://github.com/Grishj/HomeSolution", // Replace with actual GitHub URL
+      demoUrl: null, // Add demo URL if available
     },
     {
       name: "Expense Tracker",
@@ -43,6 +37,8 @@ const Projects: React.FC = () => {
         "Completed expense tracking app with features like user authentication, expense management, and visualization built in React Native.",
       status: "Completed",
       category: "Mobile App",
+      githubUrl: "https://github.com/Grishj/Expense_Tracker", // Replace with actual GitHub URL
+      demoUrl: null, // Add demo URL if available
     },
   ];
 
@@ -98,13 +94,43 @@ const Projects: React.FC = () => {
                 {project.description}
               </p>
 
-              <span
-                className={`inline-block px-2 py-1 rounded-full text-xs font-medium ${getCategoryColor(
-                  project.category
-                )}`}
-              >
-                {project.category}
-              </span>
+              <div className="flex items-center justify-between">
+                <span
+                  className={`inline-block px-2 py-1 rounded-full text-xs font-medium ${getCategoryColor(
+                    project.category
+                  )}`}
+                >
+                  {project.category}
+                </span>
+
+                <div className="flex items-center space-x-3">
+                  {project.githubUrl && (
+                    <a
+                      href={project.githubUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center space-x-1 text-gray-600 hover:text-gray-900 transition-colors duration-200"
+                      title="View on GitHub"
+                    >
+                      <Github className="w-4 h-4" />
+                      <span className="text-sm">Code</span>
+                    </a>
+                  )}
+
+                  {project.demoUrl && (
+                    <a
+                      href={project.demoUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center space-x-1 text-orange-600 hover:text-orange-700 transition-colors duration-200"
+                      title="View Live Demo"
+                    >
+                      <ExternalLink className="w-4 h-4" />
+                      <span className="text-sm">Demo</span>
+                    </a>
+                  )}
+                </div>
+              </div>
             </div>
           ))}
         </div>

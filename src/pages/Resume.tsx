@@ -1,13 +1,5 @@
 import React from "react";
-import {
-  GraduationCap,
-  Briefcase,
-  Award,
-  Phone,
-  Mail,
-  MapPin,
-  Download,
-} from "lucide-react";
+import { GraduationCap, Briefcase, Award, Phone, Download } from "lucide-react";
 import resumePdf from "../assets/resume.pdf";
 
 const Resume: React.FC = () => {
@@ -69,11 +61,12 @@ const Resume: React.FC = () => {
               <ul className="text-sm text-gray-700 ml-9 list-disc space-y-1">
                 <li>JavaScript (Intermediate)</li>
                 <li>SQL (Intermediate)</li>
-                <li>Python (Basic)</li>
-                <li>C, C++ (Basic)</li>
+                <li>Python (Intermediate)</li>
+                <li>Docker (Basic)</li>
+                <li>Linux (Basic)</li>
+
                 <li>React Native, Node.js</li>
-                <li>Git, CI/CD, GitHub Actions</li>
-                <li>Computer Networks</li>
+                <li>Git, CI/CD</li>
               </ul>
             </div>
 
@@ -86,8 +79,28 @@ const Resume: React.FC = () => {
                 </h3>
               </div>
               <ul className="text-sm text-gray-700 ml-9 list-disc space-y-1">
-                <li>On-Demand Home Service Mobile App</li>
-                <li>Expense Tracker</li>
+                <li>
+                  <span className="font-medium">
+                    On-Demand Home Service Mobile App
+                  </span>{" "}
+                  – A full-stack booking app with real-time location tracking
+                  and secure payments.
+                </li>
+                <li>
+                  <span className="font-medium">Expense Tracker</span> – A
+                  personal finance app for managing and visualizing daily
+                  expenses offline.
+                </li>
+                <li>
+                  <span className="font-medium">DevTinder</span> – A networking
+                  app for developers with real-time chat and project matching
+                  features.
+                </li>
+                <li>
+                  <span className="font-medium">PillReminder</span> – A
+                  healthcare app to manage medicine schedules with notifications
+                  and tracking.
+                </li>
               </ul>
             </div>
 
@@ -125,9 +138,9 @@ const Resume: React.FC = () => {
                   {/* <p className="text-gray-600 text-sm">
                     2021 - 2025 | GPA: 3.65
                   </p> */}
-                  <p className="text-gray-700">
+                  {/* <p className="text-gray-700">
                     Member, The Computer Innovation Society
-                  </p>
+                  </p> */}
                 </div>
                 <div>
                   <h4 className="font-semibold text-gray-900">+2 Science</h4>
