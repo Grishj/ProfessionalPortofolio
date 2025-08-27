@@ -87,13 +87,13 @@ const Resume: React.FC = () => {
                   and secure payments.
                 </li>
                 <li>
-                  <span className="font-medium">BookWorms </span> – A personal
-                  finance app for managing and visualizing daily expenses
-                  offline.
+                  <span className="font-medium">BookWorms </span> – Book
+                  Recommendation App, Share recommendations with friends
                 </li>
                 <li>
-                  <span className="font-medium">Expense Tracker</span> – Book
-                  Recommendation App, Share recommendations with friends
+                  <span className="font-medium">Expense Tracker</span> – A
+                  personal finance app for managing and visualizing daily
+                  expenses offline.
                 </li>
                 <li>
                   <span className="font-medium">DevTinder</span> – A networking
