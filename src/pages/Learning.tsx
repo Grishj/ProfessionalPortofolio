@@ -6,14 +6,29 @@ const Learning: React.FC = () => {
       year: "2025",
       courses: [
         {
-          name: "React Native New Architecture & Fabric",
+          name: "Zustand State Management",
           details:
-            "Deep dive into React Native's new architecture, Fabric renderer, TurboModules, and JSI for high-performance mobile apps.",
+            "Lightweight state management for React Native apps, learning global state patterns, async actions, and store persistence.",
         },
         {
-          name: "Advanced React Native with TypeScript",
+          name: "Redux Toolkit (RTK) with React Native",
           details:
-            "Type-safe React Native development covering custom hooks, higher-order components, and complex navigation patterns.",
+            "Modern Redux patterns using RTK Query for API management, slices, and efficient state updates in mobile applications.",
+        },
+        {
+          name: "Basic TypeScript with React Native",
+          details:
+            "Type-safe React Native development covering basic TypeScript concepts, interfaces, and component typing for better code quality.",
+        },
+        {
+          name: "NativeWind Styling",
+          details:
+            "Tailwind CSS for React Native using NativeWind, creating responsive mobile designs with utility-first CSS approach.",
+        },
+        {
+          name: "Docker for Mobile Development",
+          details:
+            "Containerizing React Native development environment, backend APIs, and database setup for consistent cross-platform development.",
         },
         {
           name: "Native Module Development (iOS & Android)",
@@ -24,11 +39,6 @@ const Learning: React.FC = () => {
           name: "React Native Performance Optimization",
           details:
             "Memory management, lazy loading, image optimization, bundle splitting, and Flipper debugging for production-ready apps.",
-        },
-        {
-          name: "Mobile App State Management Patterns",
-          details:
-            "Advanced Redux Toolkit, Zustand, Jotai, and React Query for complex state management in React Native applications.",
         },
         {
           name: "React Native Testing & CI/CD",
@@ -112,11 +122,11 @@ const Learning: React.FC = () => {
               Current Focus Areas
             </h4>
             <ul className="text-gray-700 text-sm space-y-2">
-              <li>• React Native New Architecture migration</li>
-              <li>• Advanced animations with Reanimated 3</li>
-              <li>• Cross-platform native module development</li>
-              <li>• Mobile app security and encryption</li>
-              <li>• App Store optimization and deployment</li>
+              <li>• Zustand advanced patterns and middleware</li>
+              <li>• Redux Toolkit Query optimization</li>
+              <li>• NativeWind responsive design patterns</li>
+              <li>• Docker containerization for mobile backends</li>
+              <li>• TypeScript integration best practices</li>
             </ul>
           </div>
 
@@ -128,8 +138,8 @@ const Learning: React.FC = () => {
               <li>• React Native for Web development</li>
               <li>• Advanced GraphQL and mobile caching</li>
               <li>• Mobile DevOps and automated deployment</li>
-              <li>• AR/VR integration in React Native</li>
-              <li>• Micro-frontend architecture for mobile</li>
+              <li>• Kubernetes for mobile backend scaling</li>
+              <li>• Advanced TypeScript patterns</li>
             </ul>
           </div>
         </div>

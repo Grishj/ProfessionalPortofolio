@@ -4,6 +4,15 @@ import { Github, ExternalLink } from "lucide-react";
 const Projects: React.FC = () => {
   const projects = [
     {
+      name: "BookWorms Mobile App",
+      description:
+        "A feature-rich mobile application built with React Native and Expo that helps users discover and recommend books. Features personalized recommendations, user reviews, favorites, and cloud-based image storage with Cloudinary. Backend powered by Node.js, Express, and MongoDB.",
+      status: "Completed",
+      category: "Mobile App",
+      githubUrl: "https://github.com/Grishj/bookhub", // Your actual GitHub URL
+      demoUrl: null, // Add demo URL if available
+    },
+    {
       name: "Medicine Reminder App",
       description:
         "A feature-rich mobile application built with React Native that helps users manage their daily medication schedule with reminders, notifications, dosage tracking, and history logs. Backend powered by Node.js and PostgreSQL.",
@@ -12,12 +21,11 @@ const Projects: React.FC = () => {
       githubUrl: "https://github.com/Grishj/MedicineReminderApp", // Replace with actual GitHub URL
       demoUrl: null, // Add demo URL if available
     },
-
     {
       name: "LicenseMaster",
       description:
         "Computer Engineering License Preparation app, designed to help students prepare for licensing exams with mock tests and resources.",
-      status: "Ongoing",
+      status: "Completed",
       category: "Education App",
       githubUrl: "https://github.com/Grishj/LicenseMaster", // Replace with actual GitHub URL
       demoUrl: null, // Add demo URL if available
